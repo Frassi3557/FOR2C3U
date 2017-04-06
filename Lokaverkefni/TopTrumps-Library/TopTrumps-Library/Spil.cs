@@ -10,24 +10,24 @@ namespace TopTrumps_Library
     {
 
         public string Nafn { get; set; }
-        public int Þyngd { get; set; }
-        public int Mjolkurlagni { get; set; }
-        public int EinkunnUllar { get; set; }
-        public int EinkunnLæris { get; set; }
-        public int Frjosemi { get; set; }
-        public int Gerd { get; set; }
-        public int EinkunFyrirMalir { get; set; }
+        public string Flokkur1 { get; set; }
+        public string Flokkur2 { get; set; }
+        public string Flokkur3 { get; set; }
+        public string Flokkur4 { get; set; }
+        public string Flokkur5 { get; set; }
+        public string Flokkur6 { get; set; }
+        public string Flokkur7 { get; set; }
 
-        public Spil(string nafn, int þyngd, int mjolkurlagni, int einkunnUllar, int einkunnLæris, int frjosemi, int gerd, int einkunFyrirMalir)
+        public Spil(string nafn, string flokkur1, string flokkur2, string flokkur3, string flokkur4, string flokkur5, string flokkur6, string flokkur7)
         {
-            Nafn = nafn;
-            Þyngd =þyngd;
-            Mjolkurlagni = mjolkurlagni;
-            EinkunnUllar = einkunnUllar;
-            EinkunnLæris = einkunnLæris;
-            Frjosemi = frjosemi;
-            Gerd = gerd;
-            EinkunFyrirMalir = einkunFyrirMalir;
+           Nafn = nafn;
+           Flokkur1 = flokkur1;
+           Flokkur2 = flokkur2;
+           Flokkur3 = flokkur3;
+           Flokkur4 = flokkur4;
+           Flokkur5 = flokkur5;
+           Flokkur6 = flokkur6;
+           Flokkur7 = flokkur7;
         }
 
        

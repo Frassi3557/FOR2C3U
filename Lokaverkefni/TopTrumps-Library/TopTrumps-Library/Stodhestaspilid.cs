@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace TopTrumps_Library
 {
-    // git test
     public class Stodhestaspilid: Spil
     {
         public Stodhestaspilid(string nafn, string flokkur1, string flokkur2, string flokkur3, string flokkur4, string flokkur5, string flokkur6, string flokkur7)
