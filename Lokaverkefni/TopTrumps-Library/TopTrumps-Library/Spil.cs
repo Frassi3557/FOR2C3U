@@ -10,15 +10,16 @@ namespace TopTrumps_Library
     {
 
         public string Nafn { get; set; }
-        public string Flokkur1 { get; set; }
-        public string Flokkur2 { get; set; }
-        public string Flokkur3 { get; set; }
-        public string Flokkur4 { get; set; }
-        public string Flokkur5 { get; set; }
-        public string Flokkur6 { get; set; }
-        public string Flokkur7 { get; set; }
+        public double Flokkur1 { get; set; }
+        public int Flokkur2 { get; set; }
+        public double Flokkur3 { get; set; }
+        public int Flokkur4 { get; set; }
+        public double Flokkur5 { get; set; }
+        public int Flokkur6 { get; set; }
+        public int Flokkur7 { get; set; }
+        public double Flokkur8 { get; set; }
 
-        public Spil(string nafn, string flokkur1, string flokkur2, string flokkur3, string flokkur4, string flokkur5, string flokkur6, string flokkur7)
+        public Spil(string nafn, double flokkur1, int flokkur2, double flokkur3, int flokkur4, double flokkur5, int flokkur6, int flokkur7, double flokkur8)
         {
            Nafn = nafn;
            Flokkur1 = flokkur1;
@@ -28,6 +29,7 @@ namespace TopTrumps_Library
            Flokkur5 = flokkur5;
            Flokkur6 = flokkur6;
            Flokkur7 = flokkur7;
+           Flokkur8 = flokkur8;
         }
 
        

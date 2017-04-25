@@ -25,12 +25,13 @@ namespace Lokaverkefni_Utskrift
                 switch (val)
                 {
                     case 1:
+                        Hrutspilið hrutspil1 = new Hrutspilið("Nafn", 1,2,3,4,5,6,7,8);
+                        Hrutspilið hrutspil2 = new Hrutspilið();
                         break;
 
                     case 2:
                         break;
 
-                        break;
 
                     case 0:
                         Console.WriteLine("takk fyrir að nota forritið");

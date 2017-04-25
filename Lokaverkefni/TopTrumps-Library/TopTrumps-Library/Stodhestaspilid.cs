@@ -8,14 +8,14 @@ namespace TopTrumps_Library
 {
     public class Stodhestaspilid: Spil
     {
-        public Stodhestaspilid(string nafn, string flokkur1, string flokkur2, string flokkur3, string flokkur4, string flokkur5, string flokkur6, string flokkur7)
-            :base( nafn,  flokkur1,  flokkur2, flokkur3, flokkur4,  flokkur5,  flokkur6,  flokkur7)
+        public Stodhestaspilid(string nafn, double flokkur1, int flokkur2, double flokkur3, int flokkur4, double flokkur5, int flokkur6, int flokkur7, double flokkur8)
+            : base(nafn, flokkur1, flokkur2, flokkur3, flokkur4, flokkur5, flokkur6, flokkur7, flokkur8)
         {
            
         }
         public override string ToString()
         {
-            return string.Format("Upplysingar:\n Nafn: {0}\n Flokkur1: {1}\n Flokkur2: {2}\n Flokkur3: {3}\n Flokkur4: {4}\n Flokkur5: {5}\n Flokkur6: {6}\n Flokkur7: {7}\n ", Nafn, Flokkur1, Flokkur2, Flokkur3, Flokkur4, Flokkur5, Flokkur6, Flokkur7);
+            return string.Format("Upplysingar:\n Nafn: {0}\n Flokkur1: {1}\n Flokkur2: {2}\n Flokkur3: {3}\n Flokkur4: {4}\n Flokkur5: {5}\n Flokkur6: {6}\n Flokkur7: {7}\n Flokkur7: {8}\n ", Nafn, Flokkur1, Flokkur2, Flokkur3, Flokkur4, Flokkur5, Flokkur6, Flokkur7, Flokkur8);
         }
     }
 }
