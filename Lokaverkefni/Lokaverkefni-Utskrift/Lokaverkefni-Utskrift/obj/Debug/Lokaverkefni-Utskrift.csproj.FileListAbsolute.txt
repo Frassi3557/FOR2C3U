@@ -6,11 +6,3 @@ H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\
 H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.csprojResolveAssemblyReference.cache
 H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.exe
 H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.pdb
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe.config
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.exe
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.pdb
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.csprojResolveAssemblyReference.cache
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.pdb
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.dll
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.pdb

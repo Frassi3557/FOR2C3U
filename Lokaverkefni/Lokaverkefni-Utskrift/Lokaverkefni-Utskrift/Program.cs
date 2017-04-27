@@ -25,10 +25,24 @@ namespace Lokaverkefni_Utskrift
                 switch (val)
                 {
                     case 1:
+
+                        Random randomspil = new Random();
+
+                        
                         List<Hrutspilið> stokkur = new List<Hrutspilið>();
+                        List<Hrutspilið> spilNot = new List<Hrutspilið>();
+                        List<Hrutspilið> spilTolvu = new List<Hrutspilið>();
+                        //Hrutspilið[] hrutastokkur = new Hrutspilið[52];
+
+
+                        
+                          int teljariSpil = 0;
+                          
+                         
+                        
 
                         //Hjarta_6_king
-                        stokkur.Add(new Hrutspilið("Sokki", 41,108,7.0,0,17.3,108,144,8.5));
+                        stokkur.Add(new Hrutspilið("Sokki", 41, 108, 7.0, 0, 17.3, 108, 144, 8.5));
                         stokkur.Add(new Hrutspilið("Freydir", 46.4, 105, 7.9, 135, 17.4, 103, 118, 8.6));
                         stokkur.Add(new Hrutspilið("Vodvi", 47, 100, 8.0, 0, 17.5, 106, 112, 9.0));
                         stokkur.Add(new Hrutspilið("Kjói", 48.8, 116, 8.4, 160, 17.0, 94, 111, 8.3));
@@ -91,64 +105,42 @@ namespace Lokaverkefni_Utskrift
                         stokkur.Add(new Hrutspilið("Mjolnir", 49, 105, 8.3, 78, 17.3, 105, 113, 8.6));
                         stokkur.Add(new Hrutspilið("Sigfus", 49.6, 108, 8.4, 76, 17.5, 102, 108, 8.5));
                         stokkur.Add(new Hrutspilið("Tyr", 49, 105, 8.3, 76, 17.3, 103, 110, 8.4));
+
+                        while (stokkur.Count() > 0)
+                            {
+                                int randtala = randomspil.Next(0, stokkur.Count());
+                                if (teljariSpil % 2 == 0)
+                                {
+                                    //spilNot er Listi
+                                    spilNot.Add(stokkur[randtala]);
+                               
+                                }
+
+                                else
+                                {
+                                    //spilTolvu er Listi
+                                spilTolvu.Add(stokkur[randtala]);
+                                }
+
+                                teljariSpil++;
+                                stokkur.Remove(stokkur[randtala]);
+                            }
+
+
+                        /*
+                         * Console.WriteLine(spilNot.Count());
+                        Console.WriteLine(spilTolvu.Count());
+                        foreach (Hrutspilið spil in spilTolvu)
+                        {
+                            if (spilNot.Contains(spil))
+                            {
+                                Console.WriteLine("obbosí");
+                            }
+                        }*/
+
                         break;
 
                     case 2:
-                        List<Stodhestaspilid> stokkur2 = new List<Stodhestaspilid>();
-
-                        stokkur2.Add(new Stodhestaspilid("Þristur frá Feti", 2510, 9, 8.14, 8.35, 8.27, 275, 141, 117));
-                        stokkur2.Add(new Stodhestaspilid("Þokki frá Kýrholti",2200,9.5,8.28, 9.04,8.73,175,143,123));
-                        stokkur2.Add(new Stodhestaspilid("Sveinn-Hervar frá Þúfu",2500,9.0,8.06,8.38,8.25,261,139,119));
-                        stokkur2.Add(new Stodhestaspilid("Andvari frá Ey 1",1600,9.0,8.33,8.40,8.36,500,136,120));
-                        stokkur2.Add(new Stodhestaspilid("Borði frá Fellskoti",1510,9.5,7.89,8.48,8.24,83,141,119));
-                        stokkur2.Add(new Stodhestaspilid("Rökkvi frá Harlaugsstöðum",2500,9.0,8.13,8.48,8.34,261,141,109));
-                        stokkur2.Add(new Stodhestaspilid("Kraftur frá Efri-Þverá",3400,9.0,8.20,8.48,8.37,24,143,115));
-                        stokkur2.Add(new Stodhestaspilid("Oddur frá Selfossi",4521,9.5,8.10,8.86,8.48,391,136,118));
-                        stokkur2.Add(new Stodhestaspilid("Fursti frá Stóra-Hofi",3500,9.0,8.09,8.78,8.51,36,143,121));
-                        stokkur2.Add(new Stodhestaspilid("Glymur frá Innri-Skeljabrekku",8600,9.0,7.98,8.65,8.38,87,142,115));
-                        stokkur2.Add(new Stodhestaspilid("Klettur frá Hvammi",0210,9.5,8.43,8.54,8.49,211,140,112));
-                        stokkur2.Add(new Stodhestaspilid("Aðall frá Nýjabæ",3500,9.5,8.13,8.97,8.64,82,143,118));
-                        stokkur2.Add(new Stodhestaspilid("Gígjar frá Auðsholtshjáleigu",2520,9.5,7.98,8.78,8.46,168,136,123));
-                        stokkur2.Add(new Stodhestaspilid("Hruni frá Breiðumörk 2",7510,9.0,7.61,8.41,8.09,34,133,108));
-                        stokkur2.Add(new Stodhestaspilid("Kjarkur frá Egilsstaðabæ",2700,9.5,7.85,8.71,8.28,354,133,106));
-                        stokkur2.Add(new Stodhestaspilid("Hróður frá Refssöðum",1590,9.5,7.94,8.69,8.39,344,135,125));
-                        stokkur2.Add(new Stodhestaspilid("Illingur frá Tóftum",1510,9.0,8.45,8.81,8.67,195,137,124));
-                        stokkur2.Add(new Stodhestaspilid("Sigur frá Hólabaki",1620,9.0,8.24,7.85,8.01,5,141,112));
-                        stokkur2.Add(new Stodhestaspilid("Stáli frá kjarri",7500,9.5,8.26,9.09,8.76,70,140,121));
-                        stokkur2.Add(new Stodhestaspilid("Gári frá Auðsholtshjáleigu",1600,9.5,8.87,8.47,8.63,162,143,125));
-                        stokkur2.Add(new Stodhestaspilid("Hugi frá Hafsteinsstöðum",1551,9.5,8.13,8.49,8.31,370,137,119));
-                        stokkur2.Add(new Stodhestaspilid("Funi frá Vindási",1600,9.0,8.08,8.65,8.42,29,144,122));
-                        stokkur2.Add(new Stodhestaspilid("Orri frá Þúfu",2500,9.5,8.08,8.61,8.34,1049,136,127));
-                        stokkur2.Add(new Stodhestaspilid("Þóroddur frá Þóroddsstöðum",1521,9.0,8.28,9.04,8.74,218,142,126));
-                        stokkur2.Add(new Stodhestaspilid("Klerkur frá Bjarnanesi 1",2500,9.0,7.52,7.55,7.54,11,145,104));
-                        stokkur2.Add(new Stodhestaspilid("Álfur frá Selfossi",1510,9.5,7.98,8.44,8.26,82,140,124));
-                        stokkur2.Add(new Stodhestaspilid("Keilir frá Miðsitju",6600,9.5,8.42,8.77,8.63,446,138,119));
-                        stokkur2.Add(new Stodhestaspilid("Krummi frá Blessastöðum 1a",0230,9.0,8.13,8.55,8.38,86,141,120));
-                        stokkur2.Add(new Stodhestaspilid("Akkur frá Brautarholti",1520,9.5,8.23,8.80,8.57,72,140,122));
-                        stokkur2.Add(new Stodhestaspilid("Roði frá Múla",1500,8.5,8.30,7.84,8.07,294,138,119));
-                        stokkur2.Add(new Stodhestaspilid("Örn frá Efri-Gegnishólum",1510,9.0,7.89,8.45,8.23,18,135,120));
-                        stokkur2.Add(new Stodhestaspilid("Blær frá Torfunesi",2500,9.5,8.17,8.80,8.55,87,141,126));
-                        stokkur2.Add(new Stodhestaspilid("Gustur frá Hóli",0100,10.0,8.13,9.01,8.57,644,136,124));
-                        stokkur2.Add(new Stodhestaspilid("Moli frá Skriðu",2700,9.5,7.98,8.36,8.21,80,141,110));
-                        stokkur2.Add(new Stodhestaspilid("Þorsti frá Garði",1722,9.0,8.11,8.60,8.40,57,140,116));
-                        stokkur2.Add(new Stodhestaspilid("Sær frá Bakkakoti",7200,9.5,7.96,9.05,8.62,344,143,129));
-                        stokkur2.Add(new Stodhestaspilid("Eldjárn frá Tjaldhólum",1500,10.0,8.09,8.85,8.55,132,140,119));
-                        stokkur2.Add(new Stodhestaspilid("Aron frá Strandarhöfði",2200,9.5,8.22,8.75,8.54,276,144,122));
-                        stokkur2.Add(new Stodhestaspilid("Aris frá Akureyri",2500,9.0,8.26,8.62,8.47,19,142,117));
-                        stokkur2.Add(new Stodhestaspilid("Kormákur frá Flugumýri 2",3700,9.0,8.23,8.37,8.30,327,141,119));
-                        stokkur2.Add(new Stodhestaspilid("Huginn frá Haga 1",0200,10.0,7.84,9.05,8.57,218,140,119));
-                        stokkur2.Add(new Stodhestaspilid("Ás frá Ármóti",2510,9.5,8.00,8.75,8.45,64,142,121));
-                        stokkur2.Add(new Stodhestaspilid("Baugur frá Víðisnesi 2",1514,9.0,8.33,8.58,8.48,68,142,121));
-                        stokkur2.Add(new Stodhestaspilid("Dagur frá Strandarhöfði",4500,8.5,7.96,8.26,8.14,56,138,113));
-                        stokkur2.Add(new Stodhestaspilid("Leiknir frá Vakurstöðum",2520,9.5,8.04,8.44,8.28,153,137,109));
-                        stokkur2.Add(new Stodhestaspilid("Grunur frá Oddhóli",2520,9.0,8.02,8.38,8.23,84,137,117));
-                        stokkur2.Add(new Stodhestaspilid("Natan frá Ketilsstöðum",3500,9.0,8.23,8.51,8.40,22,142,119));
-                        stokkur2.Add(new Stodhestaspilid("Glymur frá Árgerði",1500,9.0,8.18,8.53,8.39,35,140,113));
-                        stokkur2.Add(new Stodhestaspilid("Adam frá Ásmundarsstöðum",2700,9.0,8.17,8.49,8.36,345,137,124));
-                        stokkur2.Add(new Stodhestaspilid("Glampi frá vatnsleysu",2790,9.0,7.85,8.68,8.35,401,138,113));
-                        stokkur2.Add(new Stodhestaspilid("Galsi frá Sauðárkróki",7500,9.8,7.87,9.01,8.44,485,137,116));
-                        stokkur2.Add(new Stodhestaspilid("Markús frá Langholtsparti",2700,9.5,7.99,8.61,8.36,293,140,127));
-                        stokkur2.Add(new Stodhestaspilid("Vilmundur frá Feti",2700,9.5,7.96,8.95,8.56,59,138,130));
                         break;
 
 
