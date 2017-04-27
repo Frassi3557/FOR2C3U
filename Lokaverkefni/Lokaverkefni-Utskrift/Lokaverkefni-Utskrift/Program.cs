@@ -25,82 +25,62 @@ namespace Lokaverkefni_Utskrift
                 switch (val)
                 {
                     case 1:
-
-                        Random randomspil = new Random();
-                        Hrutspilið[] hrutastokkur = new Hrutspilið[52];
-
-
-                        //Hjarta_6_king
-                        hrutastokkur[0] = new Hrutspilið("Sokki", 41,108,7.0,0,17.3,108,144,8.5);
-                        hrutastokkur[1] = new Hrutspilið("Freydir", 46.4, 105, 7.9, 135, 17.4, 103, 118, 8.6);
-                        hrutastokkur[2] = new Hrutspilið("Vodvi", 47, 100, 8.0, 0, 17.5, 106, 112, 9.0);
-                        hrutastokkur[3] = new Hrutspilið("Kjói", 48.8, 116, 8.4, 160, 17.0, 94, 111, 8.3);
-                        hrutastokkur[4] = new Hrutspilið("Bogi", 49.9, 110, 8.3, 310, 17.3, 102, 116, 8.5);
-                        hrutastokkur[5] = new Hrutspilið("Falur", 48.3, 106, 8.2, 26, 16.9, 95, 114, 8.3);
-                        hrutastokkur[6] = new Hrutspilið("Bordi", 42, 110, 8.0, 0, 18.0, 104, 0, 9.0);
-                        hrutastokkur[7] = new Hrutspilið("Bramli", 47.5, 104, 7.8, 347, 17.2, 106, 102, 8.4);
-
-                        //Hjarta_as_5_tigul_10-king
-                        hrutastokkur[8] = new Hrutspilið("Kaldi", 47.8, 100, 7.8, 218, 17.1, 135, 93, 8.4);
-                        hrutastokkur[9] = new Hrutspilið("Vrom", 47.6, 95, 7.8, 158, 17.3, 111, 122, 8.5);
-                        hrutastokkur[10] = new Hrutspilið("Smyrill", 47.8, 101, 7.9, 97, 17.2, 95, 114, 8.4);
-                        hrutastokkur[11] = new Hrutspilið("Prjonn", 47.5, 110, 7.8, 370, 17.5, 105, 122, 8.6);
-                        hrutastokkur[12] = new Hrutspilið("Grabotni", 45, 102, 7.5, 0, 17.5, 106, 139, 8.5);
-                        hrutastokkur[13] = new Hrutspilið("Kongur", 59, 108, 8.0, 0, 17.5, 105, 114, 8.5);
-
-                        //Spadi_as_5_lauf_10_king
-                        hrutastokkur[14] = new Hrutspilið("Grani", 48.3, 111, 7.9, 381, 17.4, 105, 122, 8.6);
-                        hrutastokkur[15] = new Hrutspilið("Ylur", 47.4, 111, 8.0, 184, 17.2, 96, 117, 8.4);
-                        hrutastokkur[16] = new Hrutspilið("Neisti", 47, 106, 8.5, 0, 18.5, 105, 116, 9.0);
-                        hrutastokkur[17] = new Hrutspilið("Logi", 53, 109, 8.5, 0, 18.0, 101, 114, 9.0);
-                        hrutastokkur[18] = new Hrutspilið("Kvikur", 49.0, 113, 7.8, 1085, 17.4, 106, 118, 8.6);
-                        hrutastokkur[19] = new Hrutspilið("Shrek", 49.5, 117, 8.1, 82, 17.3, 103, 118, 8.5);
-                        hrutastokkur[20] = new Hrutspilið("Cat", 47.7, 98, 7.6, 193, 17.5, 100, 128, 8.6);
-                        hrutastokkur[21] = new Hrutspilið("Fannar", 46.4, 105, 7.9, 222, 17.4, 101, 125, 8.6);
-                        hrutastokkur[22] = new Hrutspilið("Hvellur", 48.8, 112, 8.0, 552, 17.3, 96, 113, 8.6);
-
-
-                        //Tigul_as_9
-                        hrutastokkur[23] = new Hrutspilið("Raftur", 47.1, 106, 7.8, 1406, 17.6, 112, 122, 8.6);
-                        hrutastokkur[24] = new Hrutspilið("Blossi", 54, 108, 8.5, 0, 18.0, 111, 113, 9.0);
-                        hrutastokkur[25] = new Hrutspilið("Blettur", 44.9, 100, 7.9, 332, 17.2, 999, 109, 8.3);
-                        hrutastokkur[26] = new Hrutspilið("Mundi", 49, 104, 7.5, 0, 16.5, 110, 126, 8.5);
-                        hrutastokkur[27] = new Hrutspilið("Hriflon", 49, 112, 8.0, 0, 18.0, 110, 124, 8.5);
-                        hrutastokkur[28] = new Hrutspilið("Skrauti", 45, 111, 7.0, 0, 17.3, 98, 112, 8.5);
-                        hrutastokkur[29] = new Hrutspilið("Krokur", 47.5, 101, 8.0, 218, 17.5, 95, 157, 8.7);
-                        hrutastokkur[30] = new Hrutspilið("Undri", 49.1, 108, 8.4, 76, 17.2, 100, 109, 8.4);
-                        hrutastokkur[31] = new Hrutspilið("As", 48.8, 121, 8.1, 82, 17.2, 108, 110, 8.3);
-
-                        //lauf as 9
-                        hrutastokkur[32] = new Hrutspilið("Þróttur", 48, 106, 7.8, 222, 17.4, 105, 121, 8.5);
-                        hrutastokkur[33] = new Hrutspilið("Bifur", 45.5, 96, 7.7, 407, 17.5, 110, 115, 8.7);
-                        hrutastokkur[34] = new Hrutspilið("Stáli", 85, 102, 8, 0, 17.5, 100, 130, 9);
-                        hrutastokkur[35] = new Hrutspilið("Fálki", 51, 103, 7.5, 0, 17.5, 102, 142, 9);
-                        hrutastokkur[36] = new Hrutspilið("Kjarkur", 48, 108, 7.5, 0, 17, 108, 0, 8.5);
-                        hrutastokkur[37] = new Hrutspilið("Hólmi", 45, 104, 7.5, 0, 18, 95, 0, 9);
-                        hrutastokkur[38] = new Hrutspilið("Púki", 49, 111, 7.7, 403, 17.3, 114, 119, 8.5);
-                        hrutastokkur[39] = new Hrutspilið("Mjöður", 46.4, 102, 8, 210, 17.5, 103, 127, 8.6);
-                        hrutastokkur[40] = new Hrutspilið("Mókollur", 49.6, 111, 7.9, 135, 16.9, 122, 102, 8.2);
-
-                        //spadi 6 king
-                        hrutastokkur[41] = new Hrutspilið("Gotti", 47.2, 100, 8, 182, 17.5, 102, 119, 8.6);
-                        hrutastokkur[42] = new Hrutspilið("Hrói", 63, 107, 8, 0, 17.3, 108, 108, 8.5);
-                        hrutastokkur[43] = new Hrutspilið("Dökkvi", 45.5, 102, 7.8, 157, 17.2, 105, 120, 8.5);
-                        hrutastokkur[44] = new Hrutspilið("Bolli", 51, 109, 9, 0, 17.5, 111, 109, 9);
-                        hrutastokkur[45] = new Hrutspilið("Týr", 38, 96, 8, 0, 17.5, 105, 131, 8.5);
-                        hrutastokkur[46] = new Hrutspilið("Papi", 45.6, 82, 8, 428, 17.6, 106, 140, 8.7);
-                        hrutastokkur[47] = new Hrutspilið("Tengill", 45, 94, 8, 0, 17.5, 97, 145, 9);
-                        hrutastokkur[48] = new Hrutspilið("At", 45.6, 110, 7.9, 244, 17.5, 110, 139, 8.5);
-                        hrutastokkur[49] = new Hrutspilið("Mjolnir", 49, 105, 8.3, 78, 17.3, 105, 113, 8.6);
-                        hrutastokkur[50] = new Hrutspilið("Sigfus", 49.6, 108, 8.4, 76, 17.5, 102, 108, 8.5);
-                        hrutastokkur[51] = new Hrutspilið("Tyr", 49, 105, 8.3, 76, 17.3, 103, 110, 8.4);
-
-
-
-
                         break;
 
                     case 2:
+                        Stodhestaspilid stodspil1 = new Stodhestaspilid("Þristur frá Feti", 2510, 9, 8.14, 8.35, 8.27, 275, 141, 117));
+                        Stodhestaspilid stodspil2 = new Stodhestaspilid("Þokki frá Kýrholti",2200,9.5,8.28, 9.04,8.73,175,143,123));
+                        Stodhestaspilid stodspil3 = new Stodhestaspilid("Sveinn-Hervar frá Þúfu",2500,9.0,8.06,8.38,8.25,261,139,119));
+                        Stodhestaspilid stodspil4 = new Stodhestaspilid("Andvari frá Ey 1",1600,9.0,8.33,8.40,8.36,500,136,120));
+                        Stodhestaspilid stodspil5 = new Stodhestaspilid("Borði frá Fellskoti",1510,9.5,7.89,8.48,8.24,83,141,119));
+                        Stodhestaspilid stodspil6 = new Stodhestaspilid("Rökkvi frá Harlaugsstöðum",2500,9.0,8.13,8.48,8.34,261,141,109));
+                        Stodhestaspilid stodspil7 = new Stodhestaspilid("Kraftur frá Efri-Þverá",3400,9.0,8.20,8.48,8.37,24,143,115));
+                        Stodhestaspilid stodspil8 = new Stodhestaspilid("Oddur frá Selfossi",4521,9.5,8.10,8.86,8.48,391,136,118));
+                        Stodhestaspilid stodspil9 = new Stodhestaspilid("Fursti frá Stóra-Hofi",3500,9.0,8.09,8.78,8.51,36,143,121));
+                        Stodhestaspilid stodspil10 = new Stodhestaspilid("Glymur frá Innri-Skeljabrekku",8600,9.0,7.98,8.65,8.38,87,142,115));
+                        Stodhestaspilid stodspil11 = new Stodhestaspilid("Klettur frá Hvammi",0210,9.5,8.43,8.54,8.49,211,140,112));
+                        Stodhestaspilid stodspil12 = new Stodhestaspilid("Aðall frá Nýjabæ",3500,9.5,8.13,8.97,8.64,82,143,118));
+                        Stodhestaspilid stodspil13 = new Stodhestaspilid("Gígjar frá Auðsholtshjáleigu",2520,9.5,7.98,8.78,8.46,168,136,123));
+                        Stodhestaspilid stodspil14 = new Stodhestaspilid("Hruni frá Breiðumörk 2",7510,9.0,7.61,8.41,8.09,34,133,108));
+                        Stodhestaspilid stodspil15 = new Stodhestaspilid("Kjarkur frá Egilsstaðabæ",2700,9.5,7.85,8.71,8.28,354,133,106));
+                        Stodhestaspilid stodspil16 = new Stodhestaspilid("Hróður frá Refssöðum",1590,9.5,7.94,8.69,8.39,344,135,125));
+                        Stodhestaspilid stodspil17 = new Stodhestaspilid("Illingur frá Tóftum",1510,9.0,8.45,8.81,8.67,195,137,124));
+                        Stodhestaspilid stodspil18 = new Stodhestaspilid("Sigur frá Hólabaki",1620,9.0,8.24,7.85,8.01,5,141,112));
+                        Stodhestaspilid stodspil19 = new Stodhestaspilid("Stáli frá kjarri",7500,9.5,8.26,9.09,8.76,70,140,121));
+                        Stodhestaspilid stodspil20 = new Stodhestaspilid("Gári frá Auðsholtshjáleigu",1600,9.5,8.87,8.47,8.63,162,143,125));
+                        Stodhestaspilid stodspil21 = new Stodhestaspilid("Hugi frá Hafsteinsstöðum",1551,9.5,8.13,8.49,8.31,370,137,119));
+                        Stodhestaspilid stodspil22 = new Stodhestaspilid("Funi frá Vindási",1600,9.0,8.08,8.65,8.42,29,144,122));
+                        Stodhestaspilid stodspil23 = new Stodhestaspilid("Orri frá Þúfu",2500,9.5,8.08,8.61,8.34,1049,136,127));
+                        Stodhestaspilid stodspil24 = new Stodhestaspilid("Þóroddur frá Þóroddsstöðum",1521,9.0,8.28,9.04,8.74,218,142,126));
+                        Stodhestaspilid stodspil25 = new Stodhestaspilid("Klerkur frá Bjarnanesi 1",2500,9.0,7.52,7.55,7.54,11,145,104));
+                        Stodhestaspilid stodspil26 = new Stodhestaspilid("Álfur frá Selfossi",1510,9.5,7.98,8.44,8.26,82,140,124));
+                        Stodhestaspilid stodspil27 = new Stodhestaspilid("Keilir frá Miðsitju",6600,9.5,8.42,8.77,8.63,446,138,119));
+                        Stodhestaspilid stodspil28 = new Stodhestaspilid("Krummi frá Blessastöðum 1a",0230,9.0,8.13,8.55,8.38,86,141,120));
+                        Stodhestaspilid stodspil29 = new Stodhestaspilid("Akkur frá Brautarholti",1520,9.5,8.23,8.80,8.57,72,140,122));
+                        Stodhestaspilid stodspil30 = new Stodhestaspilid("Roði frá Múla",1500,8.5,8.30,7.84,8.07,294,138,119));
+                        Stodhestaspilid stodspil31 = new Stodhestaspilid("Örn frá Efri-Gegnishólum",1510,9.0,7.89,8.45,8.23,18,135,120));
+                        Stodhestaspilid stodspil32 = new Stodhestaspilid("Blær frá Torfunesi",2500,9.5,8.17,8.80,8.55,87,141,126));
+                        Stodhestaspilid stodspil33 = new Stodhestaspilid("Gustur frá Hóli",0100,10.0,8.13,9.01,8.57,644,136,124));
+                        Stodhestaspilid stodspil34 = new Stodhestaspilid("Moli frá Skriðu",2700,9.5,7.98,8.36,8.21,80,141,110));
+                        Stodhestaspilid stodspil35 = new Stodhestaspilid("Þorsti frá Garði",1722,9.0,8.11,8.60,8.40,57,140,116));
+                        Stodhestaspilid stodspil36 = new Stodhestaspilid("Sær frá Bakkakoti",7200,9.5,7.96,9.05,8.62,344,143,129));
+                        Stodhestaspilid stodspil37 = new Stodhestaspilid("Eldjárn frá Tjaldhólum",1500,10.0,8.09,8.85,8.55,132,140,119));
+                        Stodhestaspilid stodspil38 = new Stodhestaspilid("Aron frá Strandarhöfði",2200,9.5,8.22,8.75,8.54,276,144,122));
+                        Stodhestaspilid stodspil39 = new Stodhestaspilid("Aris frá Akureyri",2500,9.0,8.26,8.62,8.47,19,142,117));
+                        Stodhestaspilid stodspil40 = new Stodhestaspilid("Kormákur frá Flugumýri 2",3700,9.0,8.23,8.37,8.30,327,141,119));
+                        Stodhestaspilid stodspil41 = new Stodhestaspilid("Huginn frá Haga 1",0200,10.0,7.84,9.05,8.57,218,140,119));
+                        Stodhestaspilid stodspil42 = new Stodhestaspilid("Ás frá Ármóti",2510,9.5,8.00,8.75,8.45,64,142,121));
+                        Stodhestaspilid stodspil43 = new Stodhestaspilid("Baugur frá Víðisnesi 2",1514,9.0,8.33,8.58,8.48,68,142,121));
+                        Stodhestaspilid stodspil44 = new Stodhestaspilid("Dagur frá Strandarhöfði",4500,8.5,7.96,8.26,8.14,56,138,113));
+                        Stodhestaspilid stodspil45 = new Stodhestaspilid("Leiknir frá Vakurstöðum",2520,9.5,8.04,8.44,8.28,153,137,109));
+                        Stodhestaspilid stodspil46 = new Stodhestaspilid("Grunur frá Oddhóli",2520,9.0,8.02,8.38,8.23,84,137,117));
+                        Stodhestaspilid stodspil47 = new Stodhestaspilid("Natan frá Ketilsstöðum",3500,9.0,8.23,8.51,8.40,22,142,119));
+                        Stodhestaspilid stodspil48 = new Stodhestaspilid("Glymur frá Árgerði",1500,9.0,8.18,8.53,8.39,35,140,113));
+                        Stodhestaspilid stodspil49 = new Stodhestaspilid("Adam frá Ásmundarsstöðum",2700,9.0,8.17,8.49,8.36,345,137,124));
+                        Stodhestaspilid stodspil50 = new Stodhestaspilid("Glampi frá vatnsleysu",2790,9.0,7.85,8.68,8.35,401,138,113));
+                        Stodhestaspilid stodspil51 = new Stodhestaspilid("Galsi frá Sauðárkróki",7500,9.8,7.87,9.01,8.44,485,137,116));
+                        Stodhestaspilid stodspil52 = new Stodhestaspilid("Markús frá Langholtsparti",2700,9.5,7.99,8.61,8.36,293,140,127));
+                        Stodhestaspilid stodspil53 = new Stodhestaspilid("Vilmundur frá Feti",2700,9.5,7.96,8.95,8.56,59,138,130));
                         break;
 
 
