@@ -11,15 +11,15 @@ namespace TopTrumps_Library
 
         public string Nafn { get; set; }
         public double Flokkur1 { get; set; }
-        public int Flokkur2 { get; set; }
+        public double Flokkur2 { get; set; }
         public double Flokkur3 { get; set; }
-        public int Flokkur4 { get; set; }
+        public double Flokkur4 { get; set; }
         public double Flokkur5 { get; set; }
-        public int Flokkur6 { get; set; }
-        public int Flokkur7 { get; set; }
+        public double Flokkur6 { get; set; }
+        public double Flokkur7 { get; set; }
         public double Flokkur8 { get; set; }
 
-        public Spil(string nafn, double flokkur1, int flokkur2, double flokkur3, int flokkur4, double flokkur5, int flokkur6, int flokkur7, double flokkur8)
+        public Spil(string nafn, double flokkur1, double flokkur2, double flokkur3, double flokkur4, double flokkur5, double flokkur6, double flokkur7, double flokkur8)
         {
            Nafn = nafn;
            Flokkur1 = flokkur1;

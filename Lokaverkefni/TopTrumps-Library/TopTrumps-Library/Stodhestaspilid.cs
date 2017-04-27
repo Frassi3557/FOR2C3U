@@ -8,7 +8,7 @@ namespace TopTrumps_Library
 {
     public class Stodhestaspilid: Spil
     {
-        public Stodhestaspilid(string nafn, double flokkur1, int flokkur2, double flokkur3, int flokkur4, double flokkur5, int flokkur6, int flokkur7, double flokkur8)
+        public Stodhestaspilid(string nafn, double flokkur1, double flokkur2, double flokkur3, double flokkur4, double flokkur5, double flokkur6, double flokkur7, double flokkur8)
             : base(nafn, flokkur1, flokkur2, flokkur3, flokkur4, flokkur5, flokkur6, flokkur7, flokkur8)
         {
            
