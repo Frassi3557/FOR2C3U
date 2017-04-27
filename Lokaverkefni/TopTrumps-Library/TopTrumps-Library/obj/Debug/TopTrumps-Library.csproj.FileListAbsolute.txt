@@ -3,8 +3,3 @@ H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\bin\Debu
 H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.csprojResolveAssemblyReference.cache
 H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.dll
 H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.pdb
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.csprojResolveAssemblyReference.cache
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.dll
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\bin\Debug\TopTrumps-Library.dll
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\bin\Debug\TopTrumps-Library.pdb
-C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.pdb
