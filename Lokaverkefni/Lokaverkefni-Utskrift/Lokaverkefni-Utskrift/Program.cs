@@ -32,11 +32,14 @@ namespace Lokaverkefni_Utskrift
                         List<Hrutspilið> stokkur = new List<Hrutspilið>();
                         List<Hrutspilið> spilNot = new List<Hrutspilið>();
                         List<Hrutspilið> spilTolvu = new List<Hrutspilið>();
-                        //Hrutspilið[] hrutastokkur = new Hrutspilið[52];
-
+                        List<Hrutspilið> TempStokkur = new List<Hrutspilið>();
 
                         
                           int teljariSpil = 0;
+                         int flokkur = 0;
+                          //var NotFirstCard = spilNot.First().;
+
+                          //int NotFirstCard = spilNot[1];
                           
                          
                         
@@ -125,18 +128,27 @@ namespace Lokaverkefni_Utskrift
                                 teljariSpil++;
                                 stokkur.Remove(stokkur[randtala]);
                             }
+                        Console.WriteLine("slaðu inn flokk sem tu vilt nota");
+                        flokkur = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Spil notanda");
+                       // Console.WriteLine(spilNot[0]);
+                        //spilNot.ForEach(Console.WriteLine);
+
+                        Console.WriteLine();
+                        //Console.WriteLine("Spil Tölvu");
+                       // Console.WriteLine(spilTolvu[0]);
+
+                        TempStokkur.Add(spilNot[0]);
+
+                        TempStokkur.ForEach(Console.WriteLine);
 
 
-                        /*
-                         * Console.WriteLine(spilNot.Count());
-                        Console.WriteLine(spilTolvu.Count());
-                        foreach (Hrutspilið spil in spilTolvu)
-                        {
-                            if (spilNot.Contains(spil))
-                            {
-                                Console.WriteLine("obbosí");
-                            }
-                        }*/
+
+
+
+                        
+
 
                         break;
 
@@ -148,6 +160,8 @@ namespace Lokaverkefni_Utskrift
                         List<Stodhestaspilid> spilNot2 = new List<Stodhestaspilid>();
                         List<Stodhestaspilid> spilTolvu2 = new List<Stodhestaspilid>();
                         List<Stodhestaspilid> stokkur2 = new List<Stodhestaspilid>();
+                        List<int> Tempstokkur = new List<int>();
+
 
                         int teljariSpil2 = 0;
 
@@ -224,6 +238,8 @@ namespace Lokaverkefni_Utskrift
                             stokkur2.Remove(stokkur2[randtala2]);
                         }
 
+                        Console.WriteLine(spilNot2[0]);
+                        spilNot2.ForEach(Console.WriteLine);
                      /*   Console.WriteLine(spilNot2.Count());
                         Console.WriteLine(spilTolvu2.Count());
                         foreach (Stodhestaspilid spil in spilTolvu2)

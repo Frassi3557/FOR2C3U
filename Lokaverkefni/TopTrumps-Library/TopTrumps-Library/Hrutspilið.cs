@@ -17,7 +17,7 @@ namespace TopTrumps_Library
         }
         public override string ToString()
         {
-            return string.Format("Upplysingar:\n Nafn: {0}\n Flokkur1: {1}\n Flokkur2: {2}\n Flokkur3: {3}\n Flokkur4: {4}\n Flokkur5: {5}\n Flokkur6: {6}\n Flokkur7: {7}\n Flokkur7: {8}\n ", Nafn, Flokkur1, Flokkur2, Flokkur3, Flokkur4, Flokkur5, Flokkur6, Flokkur7, Flokkur7);
+            return string.Format("Upplysingar:\n Nafn: {0}\n Þyngd: {1}\n Mjolkurlagni: {2}\n Ull: {3}\n Fjoldi afkvæma: {4}\n Læri: {5}\n Frjósemi: {6}\n Þykkt bakvöda: {7}\n malir: {8}\n ", Nafn, Flokkur1, Flokkur2, Flokkur3, Flokkur4, Flokkur5, Flokkur6, Flokkur7, Flokkur7);
         }
         
     }
