@@ -1,0 +1,8 @@
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe.config
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.pdb
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.dll
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.pdb
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.exe
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.pdb
+H:\Forriturn\önn-2k17\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.csprojResolveAssemblyReference.cache

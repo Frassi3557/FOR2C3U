@@ -1,0 +1,5 @@
+H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\bin\Debug\TopTrumps-Library.dll
+H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\bin\Debug\TopTrumps-Library.pdb
+H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.csprojResolveAssemblyReference.cache
+H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.dll
+H:\Forriturn\önn-2k17\Lokaverkefni\TopTrumps-Library\TopTrumps-Library\obj\Debug\TopTrumps-Library.pdb
