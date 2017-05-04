@@ -22,11 +22,3 @@ C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaver
 C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.dll
 C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.pdb
 C:\Users\1811992029\Downloads\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.csprojResolveAssemblyReference.cache
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe.config
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.exe
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.pdb
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.exe
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\Lokaverkefni-Utskrift.pdb
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.dll
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\bin\Debug\TopTrumps-Library.pdb
-C:\Users\0506992429\Desktop\FOR2C3U-master (1)\FOR2C3U-master\Lokaverkefni\FOR2C3U-master\Lokaverkefni\Lokaverkefni-Utskrift\Lokaverkefni-Utskrift\obj\Debug\Lokaverkefni-Utskrift.csprojResolveAssemblyReference.cache
