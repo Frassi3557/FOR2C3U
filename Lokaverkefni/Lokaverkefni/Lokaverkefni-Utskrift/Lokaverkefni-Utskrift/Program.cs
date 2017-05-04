@@ -26,7 +26,7 @@ namespace Lokaverkefni_Utskrift
                 {
                     case 1:
 
-                       Random randomspil = new Random();
+                        Random randomspil = new Random();
 
                         
                         List<Hrutspilið> stokkur = new List<Hrutspilið>();
@@ -36,7 +36,7 @@ namespace Lokaverkefni_Utskrift
 
                         
                           int teljariSpil = 0;
-                         int flokkur = 0;
+                        
                           //var NotFirstCard = spilNot.First().;
 
                           //int NotFirstCard = spilNot[1];
@@ -128,37 +128,371 @@ namespace Lokaverkefni_Utskrift
                                 teljariSpil++;
                                 stokkur.Remove(stokkur[randtala]);
                             }
-                        Console.WriteLine("slaðu inn flokk sem tu vilt nota");
-                        flokkur = Convert.ToInt32(Console.ReadLine());
 
-                       
+                        int turn = 0;                                       
+                        while (spilNot.Count != 0 && spilTolvu.Count != 0)
+                        {
+                            Console.WriteLine("Sláðu á Enter fyrir næsta leik");
+                            Console.ReadKey();
+                            Console.Clear();
 
+                            Console.WriteLine();
+                            Console.WriteLine("Notandi er med " + spilNot.Count + " spil á hendi");
+                            Console.WriteLine("Tölva er med " + spilTolvu.Count + " spil á hendi");
+                            
 
-                        //adda spil tolvu og spil notanda i tempstokk
-                        TempStokkur.Add(spilNot[0]);
-                        spilNot.Remove(spilNot[0]);///veit ekki hvort eg þurfi að removea fyrst spilið ur spilNot eða hvort það se nóg að adda þvi í annan lista
+                            int val2 = 0;
+                            turn++;
+                            Console.WriteLine();
+                            if (turn % 2 != 0)
+                            {
+                                Console.WriteLine("Spil notanda");
+                                Console.WriteLine(spilNot[0]);
 
-                        TempStokkur.Add(spilTolvu[0]);
-                        spilTolvu.Remove(spilTolvu[0]);
+                                Console.WriteLine("Veldu nr hvad tu vilt bera saman.");
+                                val2 = Convert.ToInt32(Console.ReadLine());
+                                                                
+                                Console.WriteLine("Spil Tölvu");
+                                Console.WriteLine(spilTolvu[0]);
+                            }
+                            else
+                            {
+                                
+                                Console.WriteLine("Spil Tölvu");
+                                Console.WriteLine(spilTolvu[0]);
+                                
+                                val2 = randomspil.Next(1, 9);
+                                Console.WriteLine("Tölvan valdi Flokk númer " + val2);
 
-                        Console.Clear();
+                                Console.WriteLine("Spil notanda");
+                                Console.WriteLine(spilNot[0]);
+                            }
 
                         
-                        Console.WriteLine();
-                        Console.WriteLine("Spil notanda");
-                        Console.WriteLine(TempStokkur[0]);
+                       
 
-                        Console.WriteLine();
-                        Console.WriteLine("Spil Tolvu");
-                        Console.WriteLine(TempStokkur[1]);               
+                
+                            //adda spil tolvu og spil notanda i tempstokk
+                            TempStokkur.Add(spilNot[0]);
+                            TempStokkur.Add(spilTolvu[0]);
+                         /*   spilTolvu.Remove(spilTolvu[0]);
+                            spilNot.Remove(spilNot[0]);///veit ekki hvort eg þurfi að removea fyrst spilið ur spilNot eða hvort það se nóg að adda þvi í annan lista
+                           Console.Clear();
 
-                        spilNot.AddRange(TempStokkur); 
+                        
+                            Console.WriteLine();
+                            Console.WriteLine("Spil notanda");
+                            Console.WriteLine(TempStokkur[0]);
 
-                        //eyda oll spil ur tempstokk
-                        TempStokkur.Clear();
+                            Console.WriteLine();
+                            Console.WriteLine("Spil Tolvu");
+                            Console.WriteLine(TempStokkur[1]);               
 
-                        spilNot.ForEach(Console.WriteLine);
+                            spilNot.AddRange(TempStokkur); 
 
+                            //eyda oll spil ur tempstokk
+                            TempStokkur.Clear();*/
+
+
+
+                            
+
+                            Console.WriteLine();
+
+                               if (val2 == 1)
+                            {
+                                Console.WriteLine("Þú ert með: " + spilNot[0].Flokkur1);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur1);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur1 > spilTolvu[0].Flokkur1)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    
+
+                                    TempStokkur.Clear();
+
+
+
+                                }
+                                else if (spilNot[0].Flokkur1 < spilTolvu[0].Flokkur1)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 2)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur2);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur2);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur2 > spilTolvu[0].Flokkur2)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur2 < spilTolvu[0].Flokkur2)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 3)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur3);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur3);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur3 > spilTolvu[0].Flokkur3)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur3 < spilTolvu[0].Flokkur3)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 4)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur4);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur4);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur4 > spilTolvu[0].Flokkur4)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur4 < spilTolvu[0].Flokkur4)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 5)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur5);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur5);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur5 > spilTolvu[0].Flokkur5)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur5 < spilTolvu[0].Flokkur5)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 6)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur6);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur6);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur6 > spilTolvu[0].Flokkur6)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur6 < spilTolvu[0].Flokkur6)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+
+                            }
+                            if (val2 == 7)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur7);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur7);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur7 > spilTolvu[0].Flokkur7)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur7 < spilTolvu[0].Flokkur7)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+                            }
+                             if (val2 == 8)
+                            {
+                                Console.WriteLine("Þú valdir: " + spilNot[0].Flokkur8);
+                                Console.WriteLine("Tölvan er med: " + spilTolvu[0].Flokkur8);
+                                Console.WriteLine("");
+                                if (spilNot[0].Flokkur8 > spilTolvu[0].Flokkur8)
+                                {
+                                    Console.WriteLine("Þú vannst");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilNot.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else if (spilNot[0].Flokkur8 < spilTolvu[0].Flokkur8)
+                                {
+                                    Console.WriteLine("Tölvan vann");
+
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+
+                                    spilTolvu.AddRange(TempStokkur);
+
+                                    TempStokkur.Clear();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Jafntefli");
+                                    spilNot.Remove(spilNot[0]);
+                                    spilTolvu.Remove(spilTolvu[0]);
+                                }
+                            }
+                        }// End while (turn)
+                        if (spilNot.Count == 0)
+                        {
+                            Console.WriteLine("Tölvan vann spilið");
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("Notandi vann spilið");
+                        }
                         break;
 
                     case 2:
